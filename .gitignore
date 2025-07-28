@@ -1,0 +1,48 @@
+# Ambientes Virtuais
+# Ignora pastas de ambientes virtuais com nomes comuns como venv, env, etc.
+venv/
+env/
+.venv/
+.env/
+
+# Arquivos de cache do Python
+# Ignora os bytecodes compilados e caches que o Python gera
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Arquivos de configuração de IDEs e Editores
+# Ignora configurações específicas do editor/IDE do usuário (VSCode, PyCharm, etc.)
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos de dependências e build
+# O Render usará o requirements.txt para instalar isso no servidor
+*.egg-info/
+dist/
+build/
+wheels/
+pip-wheel-metadata/
+
+# Arquivos de ambiente e segredos
+# NUNCA comite arquivos .env com senhas, chaves de API ou outras informações sensíveis
+.env
+*.env.*
+!*.env.example
+
+# Arquivos de log
+*.log
+logs/
+
+# Arquivos específicos do sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Arquivos de teste e cobertura de código
+.pytest_cache/
+.coverage
+htmlcov/
